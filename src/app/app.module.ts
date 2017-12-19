@@ -8,6 +8,17 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
+//Main f(x)
+import {GrowthTrackerPage} from '../pages/growth-tracker/growth-tracker';
+import {CalendarPage} from '../pages/calendar/calendar';
+import {CareGuidePage} from '../pages/care-guide/care-guide';
+import {OrientationPage} from '../pages/orientation/orientation';
+import {DiaryPage} from '../pages/diary/diary';
+import {SettingsPage} from '../pages/settings/settings';
+
+//Child of Main f(x)
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -17,7 +28,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    //Main f(x)
+    GrowthTrackerPage,
+    CalendarPage,
+    CareGuidePage,
+    OrientationPage,
+    DiaryPage,
+    SettingsPage
+    //Child of Main f(x)
+    
   ],
   imports: [
     BrowserModule,
@@ -29,7 +49,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    //Main f(x)
+    GrowthTrackerPage,
+    CalendarPage,
+    CareGuidePage,
+    OrientationPage,
+    DiaryPage,
+    SettingsPage
+    //Child of Main f(x)
+    
   ],
   providers: [
     StatusBar,

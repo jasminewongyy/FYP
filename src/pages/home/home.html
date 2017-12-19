@@ -1,17 +1,69 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Babapp</ion-title>
   </ion-navbar>
 </ion-header>
 
+
+
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-7><ion-img style="width: 160px; height: 80px;" src="https://i.ytimg.com/vi/dai5Sli1VOA/maxresdefault.jpg"></ion-img></ion-col>
+      <ion-col col-5>David Low Wei Jun <br/> Born on 6 Dec 2017 <br/> Corrected age is: </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
+  <!-- Default 2x3 format -->
+        <ion-grid>
+        <ion-row>
+          <ion-col>
+              <ion-card (click)="goToGrowthTracker()" class="card-background-page">
+                  <img src="../../assets/imgs/circle1.png"/>
+                  <div class="card-title">
+                  Growth Tracking
+                  </div>
+                </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card (click)="goToCalendar()" class="card-background-page">
+                <img src="../../assets/imgs/circle2.png"/>
+                <div class="card-title">Calendar</div>
+              </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="goToCareGuide()" class="card-background-page">
+              <img src="../../assets/imgs/circle3.png"/>
+              <div class="card-title">Care Guide</div>
+            </ion-card>
+      </ion-col>
+          </ion-row>
+
+          <ion-row>
+          
+          <ion-col>
+            <ion-card (click)="goToOrientation()" class="card-background-page">
+                <img src="../../assets/imgs/circle4.png"/>
+                <div class="card-title">Orientation</div>
+              </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card (click)="goToDiary()" class="card-background-page">
+              <img src="../../assets/imgs/circle5.png"/>
+              <div class="card-title">Diary</div>
+            </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="goToSettings()" class="card-background-page">
+            <img src="../../assets/imgs/circle6.png"/>
+            <div class="card-title">Settings</div>
+          </ion-card>
+    </ion-col>
+        </ion-row>
+
+      </ion-grid>
+      
+
 </ion-content>
