@@ -11,59 +11,68 @@
   <ion-grid>
     <ion-row>
       <ion-col col-7><ion-img style="width: 160px; height: 80px;" src="https://i.ytimg.com/vi/dai5Sli1VOA/maxresdefault.jpg"></ion-img></ion-col>
-      <ion-col col-5>David Low Wei Jun <br/> Born on 6 Dec 2017 <br/> Corrected age is: </ion-col>
+      <ion-col col-5>
+        <p *ngFor="let item of items"> {{item.title}} </p> <button ion-button icon-only (click)="addItem()"><ion-icon name="create"></ion-icon></button>
+        <p>Born on 6 Dec 2017 </p> <button ion-button icon-only (click)="editBirthDate()"><ion-icon name="create"></ion-icon></button>
+        <p>Corrected age is: </p> <button ion-button icon-only (click)="editAge()"><ion-icon name="create"></ion-icon></button>
+        <!--<button ion-button (click)="goToGetStarted()"> Edit </button>-->
+      </ion-col>
     </ion-row>
   </ion-grid>
 
-  
+
   <!-- Default 2x3 format -->
         <ion-grid>
         <ion-row>
           <ion-col>
-              <ion-card (click)="goToGrowthTracker()" class="card-background-page">
-                  <img src="../../assets/imgs/circle1.png"/>
+              <div (click)="goToGrowthTracker()" class="card-box">
+                  <img class="circlemenu" src="../../assets/imgs/circle1.png"/>
                   <div class="card-title">
-                  Growth Tracking
+                  Growth
                   </div>
-                </ion-card>
+                </div>
           </ion-col>
           <ion-col>
-            <ion-card (click)="goToCalendar()" class="card-background-page">
-                <img src="../../assets/imgs/circle2.png"/>
+            <div (click)="goToCalendar()" class="card-box">
+                <img class="circlemenu" src="../../assets/imgs/circle2.png"/>
                 <div class="card-title">Calendar</div>
-              </ion-card>
+              </div>
         </ion-col>
         <ion-col>
-          <ion-card (click)="goToCareGuide()" class="card-background-page">
-              <img src="../../assets/imgs/circle3.png"/>
+          <div (click)="goToCareGuide()" class="card-box">
+              <img class="circlemenu" src="../../assets/imgs/circle3.png"/>
               <div class="card-title">Care Guide</div>
-            </ion-card>
+            </div>
       </ion-col>
           </ion-row>
 
           <ion-row>
-          
+
           <ion-col>
-            <ion-card (click)="goToOrientation()" class="card-background-page">
-                <img src="../../assets/imgs/circle4.png"/>
+            <div (click)="goToOrientation()" class="card-box">
+                <img class="circlemenu" src="../../assets/imgs/circle4.png"/>
                 <div class="card-title">Orientation</div>
-              </ion-card>
+              </div>
         </ion-col>
         <ion-col>
-          <ion-card (click)="goToDiary()" class="card-background-page">
-              <img src="../../assets/imgs/circle5.png"/>
+          <div (click)="goToDiary()" class="card-box">
+              <img class="circlemenu" src="../../assets/imgs/circle5.png"/>
               <div class="card-title">Diary</div>
-            </ion-card>
+            </div>
       </ion-col>
       <ion-col>
-        <ion-card (click)="goToSettings()" class="card-background-page">
-            <img src="../../assets/imgs/circle6.png"/>
+        <div (click)="goToSettings()" class="card-box">
+            <img class="circlemenu" src="../../assets/imgs/circle6.png"/>
             <div class="card-title">Settings</div>
-          </ion-card>
+          </div>
     </ion-col>
         </ion-row>
 
       </ion-grid>
-      
+
+      <button ion-button (click)="StorageSet()"> Set Data </button>
+
+      <button ion-button (click)="StorageGet()"> Get Data </button>
+
 
 </ion-content>

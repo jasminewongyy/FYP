@@ -19,7 +19,7 @@ import { AlertController } from 'ionic-angular';
 export class GrowthTrackerPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController) {
-  
+
   }
 
   ionViewDidLoad() {
@@ -59,6 +59,5 @@ export class GrowthTrackerPage {
       ]
     });
     alert.present();
-
 }
 }

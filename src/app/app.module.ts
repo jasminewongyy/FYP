@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+//Storage
+import { IonicStorageModule } from '@ionic/storage'
+
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
@@ -15,8 +18,10 @@ import {CareGuidePage} from '../pages/care-guide/care-guide';
 import {OrientationPage} from '../pages/orientation/orientation';
 import {DiaryPage} from '../pages/diary/diary';
 import {SettingsPage} from '../pages/settings/settings';
+import {GetStartedPage} from '../pages/get-started/get-started';
 
 //Child of Main f(x)
+import { AddItemPage } from '../pages/add-item/add-item';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -35,13 +40,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CareGuidePage,
     OrientationPage,
     DiaryPage,
-    SettingsPage
+    SettingsPage,
+    GetStartedPage,
     //Child of Main f(x)
-    
+    AddItemPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -56,10 +63,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CareGuidePage,
     OrientationPage,
     DiaryPage,
-    SettingsPage
+    SettingsPage,
+    GetStartedPage,
     //Child of Main f(x)
-    
+    AddItemPage
   ],
+  //Added Storage
   providers: [
     StatusBar,
     SplashScreen,

@@ -16,24 +16,51 @@
         </ion-row>
         <ion-row>
           <ion-col>
-            Day 1
+            <div class="weightDates"> Monday </div>
           </ion-col>
           <ion-col>
-            Day 2
+            <div class="weightDates"> Tuesday </div>
           </ion-col>
           <ion-col>
-            Day 3
+            <div class="weightDates"> Wednesday </div>
+          </ion-col>
+          <ion-col>
+            <div class="weightDates"> Thursday </div>
+          </ion-col>
+          <ion-col>
+            <div class="weightDates"> Friday </div>
+          </ion-col>
+          <ion-col>
+            <div class="weightDates"> Saturday </div>
+          </ion-col>
+          <ion-col>
+            <div class="weightDates"> Sunday </div>
           </ion-col>
         </ion-row>
         <ion-row>
             <ion-col>
-              10kg
+              <div class="weightData"> 1 </div>
             </ion-col>
             <ion-col>
-              12kg
+              <div class="weightData"> 2 </div>
             </ion-col>
             <ion-col>
-              14kg
+              <div class="weightData"> 3 </div>
+            </ion-col>
+            <ion-col>
+              <div class="weightData"> 4 </div>
+            </ion-col>
+            <ion-col>
+              <div class="weightData"> 5 </div>
+            </ion-col>
+            <ion-col>
+              <div class="weightData"> 6 </div>
+            </ion-col>
+            <ion-col>
+              <div class="weightData"> 7 </div>
+            </ion-col>
+            <ion-col>
+              <ion-input type="text" value="" [(ngModel)]="inputName"></ion-input>
             </ion-col>
         </ion-row>
       </ion-grid>
@@ -42,11 +69,11 @@
       <button ion-button round outline>Graph</button>
       <button (click)="presentPrompt()" ion-button round outline>Add</button>
       </div>
-      
+
   <ion-grid>
       <ion-row>
         <ion-col col-12>
-          Baby's Length 
+          Baby's Length
         </ion-col>
       </ion-row>
       <ion-row>
@@ -81,7 +108,7 @@
     <ion-grid>
         <ion-row>
           <ion-col col-12>
-            Baby's Head Size 
+            Baby's Head Size
           </ion-col>
         </ion-row>
         <ion-row>
